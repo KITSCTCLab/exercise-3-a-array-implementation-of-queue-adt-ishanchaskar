@@ -28,6 +28,7 @@ class Solution:
         Returns:
           True if it is empty, else returns False.
         """
+        return len(self.stack) == 0
         # Write your code here
 
     def is_queue_empty(self):
@@ -37,6 +38,9 @@ class Solution:
           True if it is empty, else returns False.
         """
         # Write your code here
+        if(front) == -1 :
+            return True
+        return False
 
     def is_stack_full(self):
         """
@@ -45,6 +49,9 @@ class Solution:
           True if it is full, else returns False.
         """
         # Write your code here
+        if stack.indx== stack.size-1 :
+            return True
+        return False
 
     def is_queue_full(self):
         """
@@ -53,6 +60,9 @@ class Solution:
           True if it is full, else returns False.
         """
         # Write your code here
+        if(rear == n-1):
+            return True
+        return False
 
     def push_character(self, character):
         """
