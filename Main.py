@@ -71,6 +71,9 @@ class Solution:
             character: A character that will be pushed to the stack.
         """
         # Write your code here
+        if len(self.stack) < self.size_of_stack:
+            self.top += 1
+            self.stack.append(character)
 
     def enqueue_character(self, character):
         """
@@ -79,7 +82,16 @@ class Solution:
             character: A character that will be enqueued to queue.
         """
         # Write your code here
-
+        int val
+        if (rear == n - 1):
+            print("Queue Overflow"<<endl)
+        else :
+            if (front == - 1)
+            front = 0
+            print("Insert the element in queue : ")<<endl
+            cin>>val
+            rear++
+            queue[rear] = val
     def pop_character(self):
         """
         Do pop operation if the stack is not empty.
@@ -87,6 +99,9 @@ class Solution:
           The data that is popped out if the stack is not empty.
         """
         # Write your code here
+        if not self.is_stack_empty():
+            self.top -= 1
+            return self.stack.pop(-1)
 
     def dequeue_character(self):
         """
@@ -95,8 +110,13 @@ class Solution:
           The data that is dequeued if the queue is not empty.
         """
         # Write your code here
-
-
+        if (front == - 1 || front > rear) :
+            print("Queue Underflow ")
+            return :
+        else:
+            print("Element deleted from queue is : ")
+            queue[front] <<endl
+            front++
 # read the string text
 text = input()
 
@@ -118,8 +138,6 @@ compare both characters
 If the comparison fails, set is_palindrome as False.
 '''
 # Write the necessary logic
-
-
 # finally print whether string text is palindrome or not.
 if is_palindrome:
     print("The word, " + text + ", is a palindrome.")
